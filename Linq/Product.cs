@@ -10,8 +10,8 @@ namespace Linq
     {
         public string ProductNumber;
         public string ProductName;
-        public string ProductQuantity;
-        public string Price;
+        public int ProductQuantity;
+        public int Price;
         public string ProductCategory;
     }
 }

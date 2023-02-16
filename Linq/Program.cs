@@ -13,8 +13,20 @@ namespace Linq
         {
 
             var list = CreatList();
-            list=list.Skip(1).ToList();
-            foreach(var item in list)
+            foreach(var item in list)Console.WriteLine(item.ProductNumber);
+            //1. 計算所有商品的總價格
+            int sum =list.Select(item => item.Price).Sum();
+            Console.WriteLine($"所有商品總價格: {sum:N}");
+            //2. 計算所有商品的平均價格
+            decimal avg=list.Select(item => Convert.ToDecimal(item.Price)).Average();
+            Console.WriteLine($"所有商品的平均價格: {avg:N2}");
+            //3. 計算商品的總數量
+            int count=list.Count();
+            Console.WriteLine($"商品總數量:{count}");
+            //4. 計算商品的平均數量
+            var avgQuantity=list.Select(item =>item.ProductQuantity).Average();
+            Console.WriteLine($"商品的平均數量: {avgQuantity:N}");
+
 
             Console.ReadLine();
         }
@@ -28,15 +40,15 @@ namespace Linq
             foreach(var item in all) { Console.WriteLine(item); }
             var list = new List<Product>();
 
-            int n = 0;
+            int n = 5;
             Console.WriteLine(all.Length/5);
-            for(int i = 0; i < all.Length/5; i++)
+            for(int i = 0; i < all.Length/5-1; i++)
             {
                 list.Add(new Product() {
                     ProductNumber = all[n],
                     ProductName = all[n + 1],
-                    ProductQuantity = all[n + 2],
-                    Price = all[n + 3],
+                    ProductQuantity = int.Parse(all[n + 2]),
+                    Price = int.Parse(all[n + 3]),
                     ProductCategory = all[n + 4]
                 });
                     
