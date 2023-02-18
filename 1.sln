@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Linq", "Linq\Linq.csproj", "{7BF23DE5-A97D-48FF-B574-029DAA5C48D6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "第一題", "Linq\第一題.csproj", "{7BF23DE5-A97D-48FF-B574-029DAA5C48D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "第二題", "第二題\第二題.csproj", "{DC44530B-3862-424D-A619-E06C71CB695A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{7BF23DE5-A97D-48FF-B574-029DAA5C48D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BF23DE5-A97D-48FF-B574-029DAA5C48D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BF23DE5-A97D-48FF-B574-029DAA5C48D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC44530B-3862-424D-A619-E06C71CB695A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC44530B-3862-424D-A619-E06C71CB695A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC44530B-3862-424D-A619-E06C71CB695A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC44530B-3862-424D-A619-E06C71CB695A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
